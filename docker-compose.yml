@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  blazordockercomposebug.server:
+    image: ${DOCKER_REGISTRY-}blazordockercomposebugserver
+    build:
+      context: .
+      dockerfile: BlazorDockerComposeBug/Server/Dockerfile
